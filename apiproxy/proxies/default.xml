@@ -21,7 +21,9 @@
 <!-- /apiproxy/proxies/default.xml -->
 
 <ProxyEndpoint name="default">
-  <BasePath>/v1</BasePath>
+  <HTTPProxyConnection>
+    <BasePath>/v1</BasePath>
+  </HTTPProxyConnection>
   
   <RouteRule name="eurekaserver">
     <Condition>request.path == "/eurekaserver/**"</Condition>
