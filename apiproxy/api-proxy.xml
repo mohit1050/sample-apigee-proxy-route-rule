@@ -1,0 +1,125 @@
+<!-- <APIProxy name="sample-hello-cicd">
+    <Description>sample API proxy to demonstrate Apigee using CloudBuild</Description>
+</APIProxy>
+
+<APIProxy name="webapp1">
+    <Description>webapp1</Description>
+</APIProxy>
+
+<APIProxy name="webapp2">
+    <Description>webapp2</Description>
+</APIProxy>
+
+<APIProxy name="product">
+    <Description>product</Description>
+</APIProxy>
+
+<APIProxy name="shopping">
+    <Description>shopping</Description>
+</APIProxy>
+
+<APIProxy name="order">
+    <Description>order</Description>
+</APIProxy>
+
+<APIProxy name="shipping">
+    <Description>shipping</Description>
+</APIProxy>
+
+<APIProxy name="eurekaserver">
+    <Description>eurekaserver</Description>
+</APIProxy>
+
+<APIProxy name="kibana">
+    <Description>kibana</Description>
+</APIProxy>
+
+<APIProxy name="sonarqube">
+    <Description>sonarqube</Description>
+</APIProxy>
+
+<APIProxy name="grafana">
+    <Description>grafana</Description>
+</APIProxy>
+
+<APIProxy name="prometheus">
+    <Description>prometheus</Description>
+</APIProxy> -->
+
+
+
+<TargetEndpoints>
+ 
+  <TargetEndpoint name="eurekaserver">
+    <HTTPTargetConnection>
+      <URL>https://httpbin.org/get</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+  <TargetEndpoint name="grafana">
+    <HTTPTargetConnection>
+      <URL>https://httpbin.org/get</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+  <TargetEndpoint name="kibana">
+    <HTTPTargetConnection>
+      <URL>https://httpbin.org/get</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+  
+  <TargetEndpoint name="microservices">
+    <HTTPTargetConnection>
+      <URL>https://www.boredapi.com/api/activity</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+  <TargetEndpoint name="order">
+    <HTTPTargetConnection>
+      <URL>https://www.boredapi.com/api</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+  <TargetEndpoint name="product">
+    <HTTPTargetConnection>
+      <URL>https://www.boredapi.com/api/activity</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+  
+  <TargetEndpoint name="prometheus">
+    <HTTPTargetConnection>
+      <URL>https://www.boredapi.com/api</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+    <TargetEndpoint name="shipping">
+    <HTTPTargetConnection>
+      <URL>https://mocktarget.apigee.net/user</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+    <TargetEndpoint name="shopping">
+    <HTTPTargetConnection>
+      <URL>https://mocktarget.apigee.net/user</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+    <TargetEndpoint name="sonarqube">
+    <HTTPTargetConnection>
+      <URL>https://mocktarget.apigee.net/user</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+     <TargetEndpoint name="webapp1">
+    <HTTPTargetConnection>
+      <URL>https://mocktarget.apigee.net/user</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+     <TargetEndpoint name="webapp2">
+    <HTTPTargetConnection>
+      <URL>https://mocktarget.apigee.net/user</URL>
+    </HTTPTargetConnection>
+  </TargetEndpoint>
+
+</TargetEndpoints>

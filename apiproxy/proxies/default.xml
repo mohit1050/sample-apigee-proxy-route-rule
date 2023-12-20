@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- <ProxyEndpoint name="default">
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+</PreFlow>
+  <Flows/>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/v1/samples/hello-cicd</BasePath>
+  </HTTPProxyConnection>
+  <RouteRule name="default">
+    <TargetEndpoint>default</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint> -->
+
+
+<!-- /apiproxy/proxies/default.xml -->
+
+<ProxyEndpoint name="default">
+  <BasePath>/v1</BasePath>
+  
+  <RouteRule name="eurekaserver">
+    <Condition>request.path == "/eurekaserver/**"</Condition>
+    <TargetEndpoint>eurekaserver</TargetEndpoint>
+  </RouteRule>
+  
+  <RouteRule name="grafana">
+    <Condition>request.path == "/grafana/**"</Condition>
+    <TargetEndpoint>grafana</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="kibana">
+    <Condition>request.path == "/kibana/**"</Condition>
+    <TargetEndpoint>kibana</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="microservices">
+    <Condition>request.path == "/microservices/**"</Condition>
+    <TargetEndpoint>microservices</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="order">
+    <Condition>request.path == "/order/**"</Condition>
+    <TargetEndpoint>order</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="product">
+    <Condition>request.path == "/product/**"</Condition>
+    <TargetEndpoint>product</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="prometheus">
+    <Condition>request.path == "/prometheus/**"</Condition>
+    <TargetEndpoint>prometheus</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="prometheus">
+    <Condition>request.path == "/prometheus/**"</Condition>
+    <TargetEndpoint>prometheus</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="prometheus">
+    <Condition>request.path == "/prometheus/**"</Condition>
+    <TargetEndpoint>prometheus</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="sonarqube">
+    <Condition>request.path == "/sonarqube/**"</Condition>
+    <TargetEndpoint>sonarqube</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="webapp1">
+    <Condition>request.path == "/webapp1/**"</Condition>
+    <TargetEndpoint>webapp1</TargetEndpoint>
+  </RouteRule>
+
+  <RouteRule name="webapp2">
+    <Condition>request.path == "/webapp2/**"</Condition>
+    <TargetEndpoint>webapp2</TargetEndpoint>
+  </RouteRule>
+  
+</ProxyEndpoint>
