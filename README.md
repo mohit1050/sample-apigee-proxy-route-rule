@@ -22,15 +22,15 @@ This sample demonstrates how to use the [Apigee Maven deploy plugin](https://git
 
 Use the following GCP CloudShell tutorial, and follow the instructions.
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://ssh.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/mohit1050/sample-apigee-proxy&cloudshell_git_branch=main&cloudshell_workspace=.&cloudshell_tutorial=docs/cloudshell-tutorial-maven.md)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://ssh.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/mohit1050/sample-apigee-proxy-route-rule&cloudshell_git_branch=main&cloudshell_workspace=.&cloudshell_tutorial=docs/cloudshell-tutorial-maven.md)
 
 ## Setup instructions
 
 1. Clone the apigee-samples repo, and switch the deploy-apigee-proxy directory
 
 ```bash
-git clone https://github.com/mohit1050/sample-apigee-proxy.git
-cd sample-apigee-proxy
+git clone https://github.com/mohit1050/sample-apigee-proxy-route-rule.git
+cd sample-apigee-proxy-route-rule
 ```
 
 2. Edit the `env.sh` and configure the ENV vars
